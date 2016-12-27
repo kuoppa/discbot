@@ -1,0 +1,14 @@
+{
+  "name": "discordbot",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "discord.js": "^10.0.1",
+    "node-opus": "^0.2.4",
+    "opusscript": "^0.0.1",
+    "return-deep-diff": "^0.2.7"
+  },
+  "dependencies": {
+    "return-deep-diff": "^0.2.7"
+  }
+}
