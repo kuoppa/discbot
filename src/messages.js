@@ -15,7 +15,7 @@ messages = function(bot, msg) {
   }
 
 
-  if(msg.content.content('<@263313776554672128>')){
+  if(msg.content == '<@263313776554672128>'){
     msg.channel.sendMessage("Did I tell you that you were allowed to talk to me? taste my whip!");
   }
 
