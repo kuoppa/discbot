@@ -40,9 +40,9 @@ bot.on('guildMemberUpdate', (oMember, nMember) => {
 
 bot.on('ready', () => {
   bot.user.setGame('Half Life 3');
-  console.log('I am ready!');
+  console.log('I am online!');
 });
-console.log('ff');
+
 bot.login(setting.token);
 //bot.logout();
 //bot.disconnect();
