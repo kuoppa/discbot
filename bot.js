@@ -2,6 +2,9 @@ var Discord = require("discord.js");
 var bot = new Discord.Client();
 require('./resources/messages.js');
 
+var Chat = require('./src/chat.js');
+new Chat(bot);
+
 const setting = require("./src/disc.json");
 const ddif = require('return-deep-diff');
 
