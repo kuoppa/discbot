@@ -1,2 +1,2 @@
 # discbot
-Bot for discord
+Bot for discord and waaaaaaaaaaaay pre-alpha
