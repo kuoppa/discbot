@@ -1,11 +1,11 @@
 var Discord = require("discord.js");
 var bot = new Discord.Client();
-require('./resources/messages.js');
+require('./src/messages.js');
 
 var Chat = require('./src/chat.js');
 new Chat(bot);
 
-const setting = require("./src/disc.json");
+const setting = require("./resources/disc.json");
 const ddif = require('return-deep-diff');
 
 bot.on("message", msg => {
