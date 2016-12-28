@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
-src/disc.json
-build
+resources/*
+disc.json
