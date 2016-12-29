@@ -8,6 +8,7 @@ const commands = {
   "ping" : "Pings the members of Super Mega Team",
   "joke" : "Joke there is..",
   "setPingTarget" : "sets the ping target",
+  "advice": "You might get a good or at least not that bad advice."
 };
 
 messages = function(bot, msg) {
@@ -37,7 +38,12 @@ messages = function(bot, msg) {
       }
 
       console.log("The file was saved!");
-  }); 
+    }); 
+  }
+  
+//Kanske vi kan göra detta lite bättre?
+  if(msg.content.startsWith(prefix+'advice')){
+    getAdvice(msg);
   }
 
   if (msg.content.startsWith(prefix+"ping")) {
