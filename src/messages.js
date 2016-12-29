@@ -5,10 +5,11 @@ const commands = {
   "help" : "Shows available commands",
   "team" : "Shows current members of the SuperMegaTeam in dota 2",
   "yee"  : "You know..",
-  "ping" : "Pings the members of Super Mega Team",
+  "ping" : "Pings target that is set by 'setPingTarget'",
   "joke" : "Joke there is..",
   "setPingTarget" : "sets the ping target",
   "advice": "You might get a good or at least not that bad advice."
+  "chuck" : "Gives you the true fact about a Chuck Norris thingie."
 };
 
 messages = function(bot, msg) {
