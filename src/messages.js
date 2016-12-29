@@ -8,7 +8,7 @@ const commands = {
   "ping" : "Pings target that is set by 'setPingTarget'",
   "joke" : "Joke there is..",
   "setPingTarget" : "sets the ping target",
-  "advice": "You might get a good or at least not that bad advice."
+  "advice": "You might get a good or at least not that bad advice.",
   "chuck" : "Gives you the true fact about a Chuck Norris thingie."
 };
 
