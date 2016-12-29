@@ -24,11 +24,12 @@ messages = function(bot, msg) {
     msg.channel.sendMessage("I don't tell jokes..");
   }
 
+
   //Todo: This isn't working for some reason.
   if (msg.content.startsWith(prefix+"ping")) {
     for(var m in msg.member._roles){
       if(msg.member._roles[m] !== setting.smtid){
-        msg.channel.sendMessage("@SuperMegaTeam");
+        msg.channel.sendMessage("<@!263739196869443584>");
       }
     }
   }
