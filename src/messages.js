@@ -3,7 +3,8 @@ const commands = {
   "team" : "Shows current members of the SuperMegaTeam in dota 2",
   "yee"  : "You know..",
   "ping" : "Pings the members of Super Mega Team",
-  "joke" : "Joke there is.."
+  "joke" : "Joke there is..",
+  "advice": "You might get a good or at least not that bad advice."
 };
 
 messages = function(bot, msg) {
@@ -24,15 +25,22 @@ messages = function(bot, msg) {
     msg.channel.sendMessage("I don't tell jokes..");
   }
 
+  //Kanske vi kan göra detta lite bättre?
+  if(msg.content.startsWith(prefix+'advice')){
+    getAdvice(msg);
+
+  }
+
 
   //Todo: This isn't working for some reason.
+  /*
   if (msg.content.startsWith(prefix+"ping")) {
     for(var m in msg.member._roles){
       if(msg.member._roles[m] !== setting.smtid){
         msg.channel.sendMessage("<@!263739196869443584>");
       }
     }
-  }
+  }*/
 
 
   if (msg.content.startsWith(prefix+"help")) {

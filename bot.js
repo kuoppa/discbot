@@ -1,6 +1,6 @@
 var Discord = require("discord.js");
 var bot = new Discord.Client();
-require('./src/messages.js');
+
 
 var Chat = require('./src/chat.js');
 new Chat(bot);
@@ -8,6 +8,9 @@ new Chat(bot);
 const setting = require("./resources/disc.json");
 const ddif = require('return-deep-diff');
 
+require('./src/messages.js');
+const advice = require('./src/advice.js');
+console.log(advice);
 bot.on("message", msg => {
   messages(bot, msg);
 });
