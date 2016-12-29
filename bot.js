@@ -10,7 +10,9 @@ const ddif = require('return-deep-diff');
 
 require('./src/messages.js');
 const advice = require('./src/advice.js');
-console.log(advice);
+require('./src/norris.js');
+
+
 bot.on("message", msg => {
   messages(bot, msg);
 });

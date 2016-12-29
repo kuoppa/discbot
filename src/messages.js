@@ -28,7 +28,10 @@ messages = function(bot, msg) {
   //Kanske vi kan göra detta lite bättre?
   if(msg.content.startsWith(prefix+'advice')){
     getAdvice(msg);
+  }
 
+  if(msg.content.startsWith(prefix+'chuck')){
+    getNorris(msg);
   }
 
 
