@@ -1,0 +1,72 @@
+{
+	"command_prefix": "!",
+	"commands": [
+		{
+			"command": "help",
+			"description": "Shows available commands",
+			"response": {
+				"type": "function",
+				"function": "help",
+				"args": []
+			}
+		},
+		{
+			"command": "setTeam",
+			"description": "set team",
+			"response": {
+				"type": "function",
+				"function": "setter",
+				"args": {"name": "team"}
+			}
+		},
+		{
+			"command": "team",
+			"description": "Shows current members of the SuperMegaTeam in dota 2",
+			"response": "`${db.team}`"
+		},
+		{
+			"command": "yee",
+			"description": "You know..",
+			"response": "<:yee:245162008020779008>"
+		},
+		{
+			"command": "ping",
+			"description": "Pings target that is set by 'setPingTarget'",
+			"response": "`${db.pingTarget} ASSEMBLE!.`"
+		},
+		{
+			"command": "joke",
+			"description": "Joke there is..",
+			"response": "I don't tell jokes.."
+		},
+		{
+			"command": "advice",
+			"description": "You might get a good or at least not that bad advice.",
+			"response": {
+				"type": "api",
+				"api": "http://api.adviceslip.com/advice",
+				"args": ["slip","advice"]
+			}
+		},
+		{
+			"command": "chuck",
+			"description": "Gives you the true fact about a Chuck Norris thingie.",
+			"response": {
+				"type": "api",
+				"api": "https://api.chucknorris.io/jokes/random",
+				"args": ["value"]
+			}
+		},
+		{
+			"command": "setPingTarget",
+			"description": "sets the ping target",
+			"response": {
+				"type": "function",
+				"function": "setter",
+				"args": {
+					"name": "pingTarget"
+				}
+			}
+		}
+	]
+}

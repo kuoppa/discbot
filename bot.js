@@ -1,25 +1,16 @@
 
-const setting = require("./resources/disc.json");
+const setting = require("./resources/token.json");
 
 var Discord = require("discord.js");
 var bot = new Discord.Client();
 
-
 var Chat = require('./src/chat.js');
 new Chat(bot);
 
+var Commands = require('./src/commands.js');
+new Commands(bot);
+
 const ddif = require('return-deep-diff');
-
-require('./src/messages.js');
-const advice = require('./src/advice.js');
-require('./src/norris.js');
-
-
-bot.on("message", msg => {
-  
-  messages(bot, msg);
-});
-
 
 bot.on('guildCreate', guild => {
   guild.defaultChannel.sendMessage('-- Obey me, or I will ban you with my whip! --');
@@ -42,11 +33,6 @@ bot.on('guildMemberUpdate', (oMember, nMember) => {
   if(change.nickname){
     guild.defaultChannel.sendMessage(oMember.user.username+" heter nu "+nMember.nickname);
   }
-
-
-  //console.log(nMember.guild.roles);
-
-
 })
 
 bot.on('ready', () => {
@@ -55,11 +41,3 @@ bot.on('ready', () => {
 });
 
 bot.login(setting.token);
-//bot.logout();
-//bot.disconnect();
-/*bot.logout()
-.then(() => {
-console.timeEnd("logout");
-process.exit(0);
-});
-*/

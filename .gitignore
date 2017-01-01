@@ -1,4 +1,4 @@
 node_modules
 .DS_Store
-resources/*
-/disc.json
+disc.json
+token.json
